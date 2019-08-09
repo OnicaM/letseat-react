@@ -28,7 +28,7 @@
 	],
 	"food":[
 		{
-			"restaurantsId": 1,
+			"restaurantsId": 10,
 			"id": 1,
 			"name":"Prajitura",
 			"description":"ingrediente",
@@ -68,7 +68,7 @@
 			"price": 18
 		},
 		{
-			"restaurantsId": 1,
+			"restaurantsId": 11,
 			"id": 6,
 			"name":"Paste",
 			"description":"paste, sos, apa",
@@ -109,7 +109,7 @@
 		},
 		{
 			"restaurantsId": 9,
-			"id": 10,
+			"id": 11,
 			"name":"Mancare3",
 			"description":"ingrediente",
 			"category": "pizza",
@@ -117,7 +117,7 @@
 		},
 		{
 			"restaurantsId": 8,
-			"id": 10,
+			"id": 12,
 			"name":"Mancare2",
 			"description":"ingrediente",
 			"category": "meniu",
@@ -125,11 +125,67 @@
 		},
 		{
 			"restaurantsId": 8,
-			"id": 10,
+			"id": 13,
 			"name":"Mancare1",
 			"description":"ingrediente",
 			"category": "meniu",
 			"price": 20
+		},
+		{
+			"restaurantsId": 8,
+			"id": 14,
+			"name":"Mancare176767",
+			"description":"ingrediente",
+			"category": "meniu",
+			"price": 20
+		},
+		{
+			"restaurantsId": 8,
+			"id": 15,
+			"name":"Mancare1nbvnvb",
+			"description":"ingrediente",
+			"category": "meniu",
+			"price": 20
+		},
+		{
+			"restaurantsId": 8,
+			"id": 16,
+			"name":"Mancare1nnnn",
+			"description":"ingrediente",
+			"category": "meniu",
+			"price": 20
+		},
+		{
+			"restaurantsId": 8,
+			"id": 17,
+			"name":"Mancare1nnnn",
+			"description":"ingrediente",
+			"category": "meniu",
+			"price": 20
+		},
+		{
+			"restaurantsId": 2,
+			"id": 18,
+			"name":"Falafel",
+			"description":"ingrediente",
+			"category": "meniu",
+			"price": 23
+		},
+		{
+			"restaurantsId": 2,
+			"id": 19,
+			"name":"Kataif",
+			"description":"ingrediente",
+			"category": "meniu",
+			"price": 13
+		},
+		{
+			"restaurantsId": 2,
+			"id": 20,
+			"name":"Orez",
+			"description":"ingrediente",
+			"category": "meniu",
+			"price": 11
 		}
 
 	]
