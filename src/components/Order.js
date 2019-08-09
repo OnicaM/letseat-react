@@ -17,6 +17,10 @@ console.log(menu);
         e.preventDefault();
         alert('Comanda dumneavoastra a fost inregistrata!');
     }
+    const clearCart = (e) =>{
+        e.preventDefault();
+        setOrder([]);
+    }
     useEffect(() => {
         var menuUrl = `http://localhost:3000/food?restaurantsId=${match.params.id}`;
         fetch(menuUrl)
@@ -102,7 +106,7 @@ console.log(menu);
                   <h2>Comanda mea</h2>
                   <div className="cart-head">
                        <span className="product-quantity">{order.length}</span> Produse in cos
-                       <a href="#0" className="button empty-cart-btn">Clear</a>
+                       <a href="#" onClick={clearCart} className="button empty-cart-btn">Clear</a>
                    </div>
                   <form>
                      <div className="order-box">
