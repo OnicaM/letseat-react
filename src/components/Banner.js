@@ -1,6 +1,8 @@
-import React from 'react';
+import React  from 'react';
+import Categories from '../components/Categories';
 
 function Banner(){
+   
     return (
         <section className="banner">
             <div className="banner-content">
@@ -11,7 +13,7 @@ function Banner(){
                   </div>
                </div>
                <div className="categories categories--desktop">
-                   <ul className="categoies-list"></ul>
+                      <Categories  />
                </div>
 
             </div>

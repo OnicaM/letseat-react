@@ -1,26 +1,15 @@
-import React, {useState , useEffect } from 'react';
-import Banner from '../components/Banner';
+import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
+import {RestaurantContext, CategoryContext} from '../App';
 
 function Restaurants({match}){
-    const [restaurants, setRestaurants] = useState([]);
 
-    useEffect(() => {
-        var restaurantsUrl = 'http://localhost:3000/restaurants';
-        fetch(restaurantsUrl)
-            .then((resp) => resp.json())
-            .then((data) => {
-                //displayData(data);
-                console.log(data);
-                setRestaurants(data);
-        });
+    const restaurants = useContext(RestaurantContext);
+    const category = useContext(CategoryContext);
 
-    },[]);
 
     return (
         <div>
-            <Banner />
-        
             <section className="container container--restaurants">
                 <div className="container-content">
                     <div className="container-title">

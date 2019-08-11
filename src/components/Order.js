@@ -8,6 +8,8 @@ function Order({match}){
     const [restaurants, setRestaurants] = useState([]);
     const orderLength = order.length;
 console.log(menu);
+ 
+  
     function removeProduct(index) {
         const arrayTodos = [...order];
         arrayTodos.splice(order[index], 1);
@@ -21,6 +23,12 @@ console.log(menu);
         e.preventDefault();
         setOrder([]);
     }
+    var calculateTotalPrice = function() {
+        return order.reduce(function(total, item) {
+            return total + (item.price * item.quantity);
+        }, 0);
+    }
+    
     useEffect(() => {
         var menuUrl = `http://localhost:3000/food?restaurantsId=${match.params.id}`;
         fetch(menuUrl)
@@ -60,7 +68,7 @@ console.log(menu);
     },[]);
     return (
         <div>
-        <Banner />
+     
         <section className="container">
             <div className="container-content clearfix">
                <div className="container-title">
@@ -125,7 +133,7 @@ console.log(menu);
                                 <td className="order-box_item order-box_item-price"><span>{prod.price} lei</span></td></tr>
                             ))}
                         </table>
-                          <span className="total-price">Total 0</span>
+                          <span className="total-price">Total {calculateTotalPrice}</span>
                         <div className="order-box_details">
                            <select name="selectCity" id="selectCity" className="order-box_item">
                               <option value="craiova">Craiova</option>
