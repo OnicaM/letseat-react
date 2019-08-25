@@ -3,7 +3,8 @@ import {Link} from 'react-router-dom';
 import {CategoryContext} from '../App';
 
 function Index(){
-   const categoies = useContext(CategoryContext);
+   const categories = useContext(CategoryContext);
+   console.log("from index: ",categories);
     return (
         <section className="container container--home">
             <div className="container-content clearfix">
@@ -22,7 +23,11 @@ function Index(){
                         <div className="promo-box--inner">
                             <span className="box-title">Categorii</span> 
                             <ul className="categoies-list">
-                               
+                              {
+                                 categories.map(item => 
+                                    <li key={item.id}><a href="#">{item.name}</a></li>
+                                 )
+                              }
                             </ul>
                         </div>
                      </div>
