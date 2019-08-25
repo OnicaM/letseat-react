@@ -1,7 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Banner from '../components/Banner';
-
 function Header (){
     
     return(
@@ -28,7 +26,7 @@ function Header (){
                     </div>
                 </div>
             </header>
-            <Banner/>
+         
             </div>
     )
 }

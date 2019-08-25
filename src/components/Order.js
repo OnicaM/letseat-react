@@ -68,7 +68,7 @@ console.log(menu);
     },[]);
     return (
         <div>
-     
+        <Banner/>
         <section className="container">
             <div className="container-content clearfix">
                <div className="container-title">

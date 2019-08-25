@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import {RestaurantContext, CategoryContext} from '../App';
+import Banner from '../components/Banner';
 
 function Restaurants({match}){
 
@@ -10,6 +11,7 @@ function Restaurants({match}){
 
     return (
         <div>
+            <Banner />
             <section className="container container--restaurants">
                 <div className="container-content">
                     <div className="container-title">

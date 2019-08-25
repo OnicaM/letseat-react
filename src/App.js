@@ -14,9 +14,6 @@ export const RestaurantContext = React.createContext(null);
 export const FilterContext = React.createContext(null);
 function App() {
   
-
-
-
 const [category, setCategory] = useState([]);
 const [restaurants, setRestaurants] = useState([]); 
 
@@ -49,12 +46,12 @@ const [restaurants, setRestaurants] = useState([]);
     <Router>
 
       <RestaurantContext.Provider value={restaurants}>
-
+      <CategoryContext.Provider value={category}>
       <div className="App">
 
-          <CategoryContext.Provider value={category}>
+          
               <Header />
-          </CategoryContext.Provider>
+          
 
           <Switch>
               <Route path="/" exact component={Index} />
@@ -66,7 +63,7 @@ const [restaurants, setRestaurants] = useState([]);
           </Switch>
           
       </div> 
-       
+      </CategoryContext.Provider>
       </RestaurantContext.Provider>
 
     </Router>

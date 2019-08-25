@@ -1,6 +1,9 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import {Link} from 'react-router-dom';
+import {CategoryContext} from '../App';
+
 function Index(){
+   const categoies = useContext(CategoryContext);
     return (
         <section className="container container--home">
             <div className="container-content clearfix">
@@ -17,8 +20,10 @@ function Index(){
                      </div>
                      <div className="promo-box">
                         <div className="promo-box--inner">
-                           {/* <span className="box-title">Categorii</span> */}
-                            <ul className="categoies-list"></ul>
+                            <span className="box-title">Categorii</span> 
+                            <ul className="categoies-list">
+                               
+                            </ul>
                         </div>
                      </div>
                    </div>
